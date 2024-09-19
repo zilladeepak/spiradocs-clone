@@ -1,0 +1,12 @@
+/* * {
+    outline: 1px solid red;
+} */
+
+.md-search {
+    padding: .2rem 0;
+    /* margin: 0 13rem; */
+}
+
+#main-header{
+    display: flex;
+}
