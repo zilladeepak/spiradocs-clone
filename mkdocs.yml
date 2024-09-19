@@ -1,5 +1,5 @@
 site_name: SpiraDocs
-# site_url: https://mydomain.org/mysite
+site_url: https://mydomain.org/mysite
 
 theme:
   name: material
@@ -12,17 +12,43 @@ theme:
     primary: black
 
 nav:
+  - User Manual:
+      - How to Use This Manual: "articles/UserManual/Manual.md"
+      - Application Overview and Tips: "articles/UserManual/FunctionalityOverview.md"
+      # - Common Elements Across the Application: none
+      # - User Management: none
+      - Products:
+          - Homepage: "articles/UserManual/Products/Homepage.md"
+          - Planning: "articles/UserManual/Products/Planning.md"
+          - Testing: "articles/UserManual/Products/Testing.md"
+          # - Developing: none
+          # - Tracking: none
+          # - Reporting: none
+      # - Programs:
+      #     - Homepage: none
+      #     - Products: none
+      #     - Capabilities: none
+      #     - Program Milestones: none
+      #     - Releases: none
+      #     - Planning Board: none
+      #     - Incident: none
+      #     - Reporting: none
+      # - Portfolio Homepage: none
+      # - Enterprise Homepage: none
+      - Mobile Access: "articles/UserManual/MobileAccess.md"
+      - Keyboard Shortcuts: "articles/UserManual/KeyboardShortcuts.md"
   - About:
-      - "Introduction to Spira": "blog/index.md"
-      - "Legal Notices": "blog/index2.md"
+      - Introduction to Spira: "articles/About/Intro.md"
+      - Legal Notices: "articles/About/Legal.md"
 
 extra_css:
   - assets/style.css
 
 plugins:
   - search
-  - blog:
-      archive: false
+  - offline
+  # - blog:
+  #     archive: false
 
 copyright: © Copyright 2006-2024 Inflectra Corporation, All Rights Reserved | en-US
 extra:
@@ -30,6 +56,11 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/zilladeepak/spiradocs-clone
     - icon: fontawesome/brands/x-twitter
-      link: None
+      link: https://x.com/
     - icon: fontawesome/brands/linkedin
-      link: None
+      link: https://www.linkedin.com/
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - pymdownx.superfences
