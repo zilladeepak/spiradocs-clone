@@ -49,8 +49,7 @@ extra_css:
 plugins:
   - search
   - offline
-  # - blog:
-  #     archive: false
+  - print-site
 
 copyright: © Copyright 2006-2024 Inflectra Corporation, All Rights Reserved | en-US
 extra:
@@ -63,11 +62,18 @@ extra:
       link: https://www.linkedin.com/
 
 markdown_extensions:
-  - toc:
-      permalink: true
+  - tables
   - admonition
   - pymdownx.details
-  - pymdownx.superfences
+  - toc:
+      permalink: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
 
 repo_url: https://www.inflectra.com/
 repo_name: Inflectra

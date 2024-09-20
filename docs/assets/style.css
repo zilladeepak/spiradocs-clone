@@ -1,3 +1,14 @@
 /* * {
     outline: 1px solid red;
 } */
+
+
+
+.pill {
+    background-color: #fdcb26;
+    border-radius: 0.25rem;
+    font-size: 66%;
+    font-weight: bold;
+    padding: 0.125rem 0.5rem;
+    vertical-align: middle;
+}
