@@ -82,6 +82,9 @@ site_name: SpiraDocs
 site_url: https://mydomain.org/mysite
 
 theme:
+  features:
+    - content.code.copy
+    - content.code.select
   name: material
   icon:
     repo: fontawesome/brands/git-alt
@@ -144,12 +147,18 @@ extra:
       link: https://www.linkedin.com/
 
 markdown_extensions:
-  - toc:
-      permalink: true
+  - tables
   - admonition
   - pymdownx.details
-  - pymdownx.superfences
-  - tables:
+  - toc:
+      permalink: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
 
 repo_url: https://www.inflectra.com/
 repo_name: Inflectra
