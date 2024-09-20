@@ -49,6 +49,7 @@ extra_css:
 plugins:
   - search
   - offline
+  - print-site
   # - blog:
   #     archive: false
 
@@ -68,6 +69,9 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+  - tables:
 
 repo_url: https://www.inflectra.com/
 repo_name: Inflectra
+
+
